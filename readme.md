@@ -21,9 +21,11 @@ Please see [this google doc link](https://docs.google.com/document/d/1_OpId3aPam
 API endpoint: http://dev-api.wwl.tv/api/v1
 
 1. To get a confirmation code for a phone number:
+
 http://dev-api.wwl.tv/docs/index.html#api-Authentication-Confirmation_Sms
 
 2. To check confirmation code and get JWT session token:
+
 http://dev-api.wwl.tv/docs/index.html#api-Authentication-Login (Use authcode parameters)
 
 You will get `token` at this endpoint. You will always send this token as header parameter: `Authorization`. And also, you need to add `Bearer ` (with a trailing space) string at front of token. 
@@ -31,6 +33,7 @@ You will get `token` at this endpoint. You will always send this token as header
 `Authorization: "Bearer {token}"`
 
 3. You need to get profile fields to show them in form:
+
 http://dev-api.wwl.tv/docs/index.html#api-UserProfile
 
 ## Bonus Story (if you really want to WOW me)
