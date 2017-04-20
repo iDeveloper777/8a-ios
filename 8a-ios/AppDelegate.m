@@ -14,9 +14,30 @@
 
 @implementation AppDelegate
 
+static AppDelegate* sharedDelegate = nil;
++(AppDelegate *)sharedAppDeleate{
+    if (sharedDelegate == nil)
+        sharedDelegate = (AppDelegate*) [[UIApplication sharedApplication] delegate];
+    
+    return sharedDelegate;
+}
+
+-(NSString*)storyboardName
+{
+    CGSize iOSDeviceScreenSize = [[UIScreen mainScreen] bounds].size;
+    if (iOSDeviceScreenSize.height == 480)
+    {
+        return @"Main";
+        
+    }
+    else{
+        return @"Main";
+    }
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
     return YES;
 }
 

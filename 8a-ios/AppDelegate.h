@@ -12,6 +12,11 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++(AppDelegate *)sharedAppDeleate;
+-(NSString*)storyboardName;
+
+@property (strong, nonatomic) NSString *phoneNumber;
+@property (strong, nonatomic) NSString *tokenID;
 
 @end
 
