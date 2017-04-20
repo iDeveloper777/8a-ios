@@ -26,13 +26,13 @@ http://dev-api.wwl.tv/docs/index.html#api-Authentication-Confirmation_Sms
 
 2. To check confirmation code and get JWT session token:
 
-http://dev-api.wwl.tv/docs/index.html#api-Authentication-Login (Use authcode parameters)
+http://dev-api.wwl.tv/docs/index.html#api-Authentication-Login
 
 You will get `token` at this endpoint. You will always send this token as header parameter: `Authorization`. And also, you need to add `Bearer ` (with a trailing space) string at front of token. 
 
 `Authorization: "Bearer {token}"`
 
-3. You need to get profile fields to show them in form:
+3. To get profile fields to show them in form:
 
 http://dev-api.wwl.tv/docs/index.html#api-UserProfile
 
